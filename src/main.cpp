@@ -1,9 +1,11 @@
 #include <SFML/Graphics.hpp>
+#include "Core/Object.cpp"
 
 int main()
 {
     auto window = sf::RenderWindow{ { 1920u, 1080u }, "CMake SFML Project" };
     window.setFramerateLimit(144);
+
 
     while (window.isOpen())
     {
@@ -13,9 +15,9 @@ int main()
             {
                 window.close();
             }
+
         }
 
-        window.clear();
         window.display();
     }
 }
